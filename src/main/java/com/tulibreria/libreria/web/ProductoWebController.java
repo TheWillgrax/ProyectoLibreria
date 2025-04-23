@@ -15,18 +15,20 @@ public class ProductoWebController {
         this.productoService = productoService;
     }
 
-    // 1. Mostrar lista de productos
+    // 1. Mostrar lista de productos con layout
     @GetMapping("/productos")
     public String mostrarProductos(Model model) {
         model.addAttribute("productos", productoService.findAll());
-        return "productos";  // Va a templates/productos.html
+        model.addAttribute("title", "Gestión de Productos"); // Título dinámico
+        model.addAttribute("content", "productos"); // Carga productos.html en el layout
+        return "layout";  // Siempre regresa layout.html
     }
 
-    // 2. Mostrar formulario para crear nuevo producto
+    // 2. Mostrar formulario para crear nuevo producto (sin layout)
     @GetMapping("/productos/nuevo")
     public String mostrarFormularioNuevoProducto(Model model) {
         model.addAttribute("producto", new Producto());
-        return "producto_form";  // Va a templates/producto_form.html
+        return "producto_form";  // Solo el formulario, sin layout
     }
 
     // 3. Guardar producto (nuevo o editado)
@@ -36,13 +38,13 @@ public class ProductoWebController {
         return "redirect:/productos";
     }
 
-    // 4. Mostrar formulario para editar producto
+    // 4. Mostrar formulario para editar producto (sin layout)
     @GetMapping("/productos/editar/{id}")
     public String mostrarFormularioEditarProducto(@PathVariable Long id, Model model) {
         Producto producto = productoService.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("ID de producto inválido: " + id));
         model.addAttribute("producto", producto);
-        return "producto_form";  // Usa el mismo formulario que crear
+        return "producto_form";  // Usa el mismo formulario, sin layout
     }
 
     // 5. Eliminar producto
