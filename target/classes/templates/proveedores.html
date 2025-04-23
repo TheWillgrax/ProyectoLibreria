@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="es">
 <head>
-    <title th:replace="layout :: title">Gestión de Proveedores</title> <!-- Título dinámico -->
+    <title th:replace="layout :: title">Gestión de Proveedores</title> <!-- Título dinámico desde layout -->
 </head>
 <body>
-<div th:replace="layout :: sidebar"></div> <!-- Sidebar desde el layout -->
 
-<div th:replace="layout :: content">
+<!-- Este es el fragmento que el layout va a insertar -->
+<div th:fragment="content">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h2><i class="fas fa-truck me-2"></i>Gestión de Proveedores</h2>
         <a th:href="@{/proveedores/nuevo}" class="btn btn-primary">
@@ -53,3 +53,4 @@
 
 </body>
 </html>
+

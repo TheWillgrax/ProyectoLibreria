@@ -15,18 +15,20 @@ public class UsuarioWebController {
         this.usuarioService = usuarioService;
     }
 
-    // 1. Listar usuarios
+    // 1. Listar usuarios con layout
     @GetMapping("/usuarios")
     public String mostrarUsuarios(Model model) {
         model.addAttribute("usuarios", usuarioService.findAll());
-        return "usuarios";  // templates/usuarios.html
+        model.addAttribute("title", "Gestión de Usuarios"); // Título dinámico
+        model.addAttribute("content", "usuarios");          // Carga usuarios.html dentro del layout
+        return "layout";                                    // Usa layout.html como base
     }
 
-    // 2. Mostrar formulario para crear nuevo usuario
+    // 2. Mostrar formulario para crear nuevo usuario (sin layout)
     @GetMapping("/usuarios/nuevo")
     public String mostrarFormularioNuevoUsuario(Model model) {
         model.addAttribute("usuario", new Usuario());
-        return "usuario_form";  // templates/usuario_form.html
+        return "usuario_form";  // Solo el formulario, sin layout
     }
 
     // 3. Guardar usuario (nuevo o editado)
@@ -36,13 +38,13 @@ public class UsuarioWebController {
         return "redirect:/usuarios";
     }
 
-    // 4. Mostrar formulario para editar usuario
+    // 4. Mostrar formulario para editar usuario (sin layout)
     @GetMapping("/usuarios/editar/{id}")
     public String mostrarFormularioEditarUsuario(@PathVariable Long id, Model model) {
         Usuario usuario = usuarioService.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("ID de usuario inválido: " + id));
         model.addAttribute("usuario", usuario);
-        return "usuario_form";
+        return "usuario_form";  // Usa el mismo formulario para editar, sin layout
     }
 
     // 5. Eliminar usuario
