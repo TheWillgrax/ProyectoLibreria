@@ -3,6 +3,7 @@ C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\controller\CategoriaController.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\controller\HomeController.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\controller\InventarioController.java
+C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\controller\LoginController.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\controller\ProductoController.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\controller\ProveedorController.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\controller\UsuarioController.java
@@ -25,6 +26,8 @@ C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\repository\ProductoRepository.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\repository\ProveedorRepository.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\repository\UsuarioRepository.java
+C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\security\CustomUserDetailsService.java
+C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\security\SecurityConfig.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\service\BodegaService.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\service\CategoriaService.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\service\InventarioService.java

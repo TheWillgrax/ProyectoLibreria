@@ -8,6 +8,6 @@ public class HomeController {
 
     @GetMapping("/")
     public String home() {
-        return "redirect:/productos";  // Cambia a donde tengas tu CRUD (ej: /productos o /proveedores)
+        return "redirect:/login";  // Cambia a donde tengas tu CRUD (ej: /productos o /proveedores)
     }
 }

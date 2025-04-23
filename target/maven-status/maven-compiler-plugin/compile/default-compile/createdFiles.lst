@@ -23,11 +23,14 @@ com\tulibreria\libreria\controller\ProductoController.class
 com\tulibreria\libreria\LibreriaApplication.class
 com\tulibreria\libreria\web\ProductoWebController.class
 com\tulibreria\libreria\config\SecurityConfig.class
+com\tulibreria\libreria\controller\LoginController.class
+com\tulibreria\libreria\security\SecurityConfig.class
 com\tulibreria\libreria\entity\Cliente.class
 com\tulibreria\libreria\entity\Inventario.class
 com\tulibreria\libreria\service\InventarioService.class
 com\tulibreria\libreria\controller\CategoriaController.class
 com\tulibreria\libreria\entity\DetalleVenta.class
+com\tulibreria\libreria\security\CustomUserDetailsService.class
 com\tulibreria\libreria\controller\UsuarioController.class
 com\tulibreria\libreria\web\UsuarioWebController.class
 com\tulibreria\libreria\entity\Categoria.class
