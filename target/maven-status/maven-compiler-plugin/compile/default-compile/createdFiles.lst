@@ -6,6 +6,7 @@ com\tulibreria\libreria\entity\TipoPago.class
 com\tulibreria\libreria\repository\CategoriaRepository.class
 com\tulibreria\libreria\service\ProveedorService.class
 com\tulibreria\libreria\entity\DetalleCompra.class
+com\tulibreria\libreria\service\UsuarioService.class
 com\tulibreria\libreria\controller\BodegaController.class
 com\tulibreria\libreria\repository\BodegaRepository.class
 com\tulibreria\libreria\entity\Bodega.class
@@ -15,6 +16,7 @@ com\tulibreria\libreria\controller\ProveedorController.class
 com\tulibreria\libreria\entity\Proveedor.class
 com\tulibreria\libreria\service\ProductoService.class
 com\tulibreria\libreria\repository\InventarioRepository.class
+com\tulibreria\libreria\entity\Usuario.class
 com\tulibreria\libreria\repository\ProveedorRepository.class
 com\tulibreria\libreria\controller\InventarioController.class
 com\tulibreria\libreria\controller\ProductoController.class
@@ -26,6 +28,9 @@ com\tulibreria\libreria\entity\Inventario.class
 com\tulibreria\libreria\service\InventarioService.class
 com\tulibreria\libreria\controller\CategoriaController.class
 com\tulibreria\libreria\entity\DetalleVenta.class
+com\tulibreria\libreria\controller\UsuarioController.class
+com\tulibreria\libreria\web\UsuarioWebController.class
 com\tulibreria\libreria\entity\Categoria.class
 com\tulibreria\libreria\repository\ProductoRepository.class
 com\tulibreria\libreria\web\ProveedorWebController.class
+com\tulibreria\libreria\repository\UsuarioRepository.class

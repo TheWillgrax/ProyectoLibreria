@@ -5,6 +5,7 @@ C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\controller\InventarioController.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\controller\ProductoController.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\controller\ProveedorController.java
+C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\controller\UsuarioController.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\entity\Bodega.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\entity\Categoria.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\entity\Cliente.java
@@ -15,6 +16,7 @@ C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\entity\Producto.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\entity\Proveedor.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\entity\TipoPago.java
+C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\entity\Usuario.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\entity\Venta.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\LibreriaApplication.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\repository\BodegaRepository.java
@@ -22,10 +24,13 @@ C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\repository\InventarioRepository.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\repository\ProductoRepository.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\repository\ProveedorRepository.java
+C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\repository\UsuarioRepository.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\service\BodegaService.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\service\CategoriaService.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\service\InventarioService.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\service\ProductoService.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\service\ProveedorService.java
+C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\service\UsuarioService.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\web\ProductoWebController.java
 C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\web\ProveedorWebController.java
+C:\Users\omarm\Downloads\ProyectoLibreria\libreria\src\main\java\com\tulibreria\libreria\web\UsuarioWebController.java
