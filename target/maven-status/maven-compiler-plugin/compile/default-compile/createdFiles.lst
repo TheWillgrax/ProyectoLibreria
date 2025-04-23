@@ -22,7 +22,6 @@ com\tulibreria\libreria\controller\InventarioController.class
 com\tulibreria\libreria\controller\ProductoController.class
 com\tulibreria\libreria\LibreriaApplication.class
 com\tulibreria\libreria\web\ProductoWebController.class
-com\tulibreria\libreria\config\SecurityConfig.class
 com\tulibreria\libreria\controller\LoginController.class
 com\tulibreria\libreria\security\SecurityConfig.class
 com\tulibreria\libreria\entity\Cliente.class
