@@ -19,14 +19,11 @@
             --dark-gray: #495057;
             --text-color: #212529;
             --error-color: #ef233c;
-            --success-color: #4cc9f0;
         }
 
         body {
             background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
             display: flex;
             justify-content: center;
@@ -36,7 +33,7 @@
 
         .container {
             background: white;
-            padding: 2rem;
+            padding: 2.5rem;
             border-radius: 1rem;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
             width: 100%;
@@ -63,7 +60,7 @@
         }
 
         .form-group {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             text-align: left;
         }
 
@@ -80,16 +77,27 @@
         .input-icon i {
             position: absolute;
             top: 50%;
-            left: 10px;
+            left: 12px;
             transform: translateY(-50%);
             color: var(--dark-gray);
         }
 
         .input-icon input {
             width: 100%;
-            padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+            padding: 0.75rem 2.5rem 0.75rem 2.5rem;
             border: 1px solid var(--medium-gray);
             border-radius: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        /* Estilo para el botón de mostrar/ocultar contraseña */
+        .input-icon .toggle-password {
+            position: absolute;
+            top: 50%;
+            right: 12px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: var(--dark-gray);
         }
 
         .btn-submit {
@@ -102,6 +110,7 @@
             font-weight: 500;
             margin-top: 1rem;
             cursor: pointer;
+            font-size: 1rem;
         }
 
         .btn-submit:hover {
@@ -117,6 +126,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            font-size: 0.9rem;
         }
 
         .error-message i {
@@ -128,7 +138,7 @@
             justify-content: space-between;
             align-items: center;
             font-size: 0.85rem;
-            margin-bottom: 1rem;
+            margin-top: 1rem;
         }
 
         .signup-link {
@@ -176,6 +186,7 @@
             <div class="input-icon">
                 <i class="fas fa-lock"></i>
                 <input type="password" id="password" name="password" class="form-control" placeholder="Ingresa tu contraseña" required autocomplete="current-password">
+                <i class="fas fa-eye toggle-password"></i>
             </div>
         </div>
 
@@ -198,17 +209,10 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
         const passwordInput = document.getElementById('password');
-        const lockIcon = document.querySelector('.fa-lock').parentNode;
-        const toggleBtn = document.createElement('span');
-        toggleBtn.innerHTML = '<i class="fas fa-eye" style="margin-left: 5px; cursor: pointer;"></i>';
-        toggleBtn.style.position = 'absolute';
-        toggleBtn.style.right = '15px';
-        toggleBtn.style.top = '50%';
-        toggleBtn.style.transform = 'translateY(-50%)';
-        toggleBtn.style.color = 'var(--dark-gray)';
-        lockIcon.appendChild(toggleBtn);
+        const toggleBtn = document.querySelector('.toggle-password');
+
         toggleBtn.addEventListener('click', function() {
-            const icon = this.querySelector('i');
+            const icon = this;
             if (passwordInput.type === 'password') {
                 passwordInput.type = 'text';
                 icon.classList.replace('fa-eye', 'fa-eye-slash');
@@ -217,12 +221,8 @@
                 icon.classList.replace('fa-eye-slash', 'fa-eye');
             }
         });
-        const rememberCheckbox = document.getElementById('remember-me');
-        rememberCheckbox.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter' || e.key === ' ') {
-                this.checked = !this.checked;
-            }
-        });
+
+        // Enfoque automático en el campo de usuario
         document.getElementById('username').focus();
     });
 </script>
